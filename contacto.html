@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metas recomendadas -->
+	<meta charset="UTF-8">
+	<title>Contacto | Blog de Nicolás Alcaide Delaire</title>
+	
+	<!-- Metas recomendadas para posicionamiento Web -->
+	<meta name="description" content="Blog de Nicolás Alcaide para la Actividad 1 de la asignatura Aplicaciones en red de la UNIR"/>
+	<meta name="keywords" content="Nicolas Alcaide, blog de tecnología, UNIR, Aplicaciones en red, Actividad 1"/>
+	<meta name="robots" content="index"/>
+	
+	<!-- Otras metas recomendables -->
+	<meta name="author" content="Nicolás Alcaide" />
+	<meta name="copyright" content="Propietario del copyright: Nicolás Alcaide" />
+    
+	<!-- Fichero de hoja de estilos -->
+   <link rel="stylesheet" href="css/styles.css">
+   
+</head>
+<body>
+
+    <!-- Menu Principal -->
+	<nav class="menuprincipal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quien-soy.html">Quién Soy</a></li>
+            <li><a href="actualidad.html">Actualidad</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+	<!-- Caja cabecera -->
+    <header class="header">
+        <div class="header-content">
+			<h1>Contacto</h1>
+			<p>Formulario de contacto</p>
+		</div>	
+    </header>
+
+	<!-- Contenido - Caja blanca -->
+   <div class="contenido">
+		
+		<form action="correo.php" method="POST">
+			<p>
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" required>
+			
+				<label for="apellidos">Apellidos:</label>
+				<input type="text" name="apellidos" required>
+			</p>
+			
+			<p>
+				<label for="correo">Correo Electrónico:</label>
+				<input type="email" name="correo" required>
+			</p>
+
+			<p>
+				<label for="tema_consulta">Tema de tu consulta:</label>
+				<select name="tema_consulta"  required>
+					<option value="Noticias">Noticias publicadas</option>
+					<option value="Contacto">Para contactar conmigo</option>
+					<option value="Colaboraciones">Colaboraciones</option>
+					<option value="Otro">Otros</option>
+				</select>
+			
+			</p>
+			
+			<p>
+				<textarea placeholder="Comentario"  name="comentario"></textarea>
+			</p>
+
+			 <button type="submit">Enviar email</button> <!-- Botón para activar el envío de email -->
+			
+		</form>
+	</div>		
+
+	<!-- Pie de pagina -->
+    <footer class="footer">
+        <p>Actividad 1 - Implantación de aplicaciones Web - UNIR</p>
+    </footer>
+</body>
+</html>
